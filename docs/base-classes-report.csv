@@ -1,0 +1,64 @@
+IRI,label
+http://purl.obolibrary.org/obo/OMRSE_00000212,non-binary identity information content entity
+http://purl.obolibrary.org/obo/OMRSE_00000211,male gender identity information content entity
+http://purl.obolibrary.org/obo/OMRSE_00000210,female gender identity information content entity
+http://purl.obolibrary.org/obo/OMRSE_00000209,gender identity information content entity
+http://purl.obolibrary.org/obo/OMRSE_00000204,social identity information content entity
+http://purl.obolibrary.org/obo/OMRSE_00000062,facility
+http://purl.obolibrary.org/obo/OMRSE_00000061,architectural structure
+http://purl.obolibrary.org/obo/IAO_0000030,information content entity
+http://purl.obolibrary.org/obo/BFO_0000040,material entity
+http://purl.obolibrary.org/obo/BFO_0000002,continuant
+http://purl.obolibrary.org/obo/BFO_0000144,process profile
+http://purl.obolibrary.org/obo/BFO_0000035,process boundary
+http://purl.obolibrary.org/obo/BFO_0000003,occurrent
+http://purl.obolibrary.org/obo/BFO_0000148,zero-dimensional temporal region
+http://purl.obolibrary.org/obo/BFO_0000026,one-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000008,temporal region
+http://purl.obolibrary.org/obo/BFO_0000141,immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000001,entity
+http://purl.obolibrary.org/obo/BFO_0000034,function
+http://purl.obolibrary.org/obo/BFO_0000024,fiat object part
+http://purl.obolibrary.org/obo/BFO_0000006,spatial region
+http://purl.obolibrary.org/obo/BFO_0000016,disposition
+http://purl.obolibrary.org/obo/BFO_0000038,one-dimensional temporal region
+http://purl.obolibrary.org/obo/BFO_0000028,three-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000140,continuant fiat boundary
+http://purl.obolibrary.org/obo/BFO_0000031,generically dependent continuant
+http://purl.obolibrary.org/obo/BFO_0000029,site
+http://purl.obolibrary.org/obo/BFO_0000019,quality
+http://purl.obolibrary.org/obo/BFO_0000147,zero-dimensional continuant fiat boundary
+http://purl.obolibrary.org/obo/BFO_0000023,role
+http://purl.obolibrary.org/obo/BFO_0000182,history
+http://purl.obolibrary.org/obo/BFO_0000027,object aggregate
+http://purl.obolibrary.org/obo/BFO_0000017,realizable entity
+http://purl.obolibrary.org/obo/BFO_0000011,spatiotemporal region
+http://purl.obolibrary.org/obo/BFO_0000009,two-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000145,relational quality
+http://purl.obolibrary.org/obo/BFO_0000142,one-dimensional continuant fiat boundary
+http://purl.obolibrary.org/obo/BFO_0000030,object
+http://purl.obolibrary.org/obo/BFO_0000020,specifically dependent continuant
+http://purl.obolibrary.org/obo/BFO_0000004,independent continuant
+http://purl.obolibrary.org/obo/BFO_0000015,process
+http://purl.obolibrary.org/obo/BFO_0000018,zero-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000146,two-dimensional continuant fiat boundary
+http://purl.obolibrary.org/obo/IAO_0000578,centrally registered identifier
+http://purl.obolibrary.org/obo/IAO_0000310,document
+http://purl.obolibrary.org/obo/IAO_0000007,action specification
+http://purl.obolibrary.org/obo/IAO_0020000,identifier
+http://purl.obolibrary.org/obo/IAO_0000033,directive information entity
+http://purl.obolibrary.org/obo/IAO_0000005,objective specification
+http://purl.obolibrary.org/obo/IAO_0000027,data item
+http://purl.obolibrary.org/obo/IAO_0000300,textual entity
+http://purl.obolibrary.org/obo/IAO_0020010,identifier creating process
+http://purl.obolibrary.org/obo/IAO_0000646,postal code
+http://purl.obolibrary.org/obo/IAO_0000104,plan specification
+http://purl.obolibrary.org/obo/IAO_0000422,postal address
+http://purl.obolibrary.org/obo/OBI_0000011,planned process
+http://purl.obolibrary.org/obo/OBI_0000245,organization
+http://purl.obolibrary.org/obo/OBI_0100026,organism
+http://purl.obolibrary.org/obo/NCBITaxon_2,Bacteria
+http://purl.obolibrary.org/obo/NCBITaxon_10239,Viruses
+http://purl.obolibrary.org/obo/NCBITaxon_9606,Homo sapiens
+http://purl.obolibrary.org/obo/NCBITaxon_2157,Archaea
+http://purl.obolibrary.org/obo/NCBITaxon_2759,Eukaryota

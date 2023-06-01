@@ -1,1 +1,62 @@
-
+#Classes
+#
+BFO:0000001	# Entity
+BFO:0000003	# Occurent
+BFO:0000002	# Continuant
+BFO:0000004	# independent continuant
+BFO:0000015	# Process
+BFO:0000040	# Material entity
+#
+#Properties
+#
+BFO:0000050	# part of
+BFO:0000051	# has part
+BFO:0000054	# realized in
+BFO:0000055	# realizes
+BFO:0000066	# occurs in
+BFO:0000067	# contains process
+RO:0002352	# input of
+RO:0002233	# has input
+RO:0002353	# output of
+RO:0002234	# has output
+RO:0000052	# characteristic of
+RO:0000053	# has characteristic
+RO:0000056	# participates in
+RO:0000057	# has participant
+RO:0000058	# is concretized as
+RO:0000059	# concretizes
+RO:0000079	# function of
+RO:0000080	# quality of
+RO:0000081	# role of
+RO:0000085	# has function
+RO:0000086	# has quality
+RO:0000087	# has role
+RO:0000092	# disposition of
+RO:0000091	# has disposition
+RO:0002479	# has part that occurs in
+RO:0002351	# has member
+RO:0002350	# member of
+RO:0002180	# has component
+RO:0002018	# has component process
+RO:0002222	# temporally related to
+RO:0002081	# before or simultaneous with
+RO:0002083	# before
+RO:0002082	# simultaneous with
+RO:0002084	# during which ends
+RO:0002088	# during which starts
+RO:0002085	# encompasses
+RO:0002229	# ends
+RO:0002086	# ends after
+RO:0002087	# immediately preceded by
+RO:0002093	# ends during
+RO:0002092	# happens during
+RO:0002230	# ends with
+RO:0002090	# immediately precedes
+RO:0002087	# immediately preceded by
+RO:0002223	# starts
+RO:0002089	# starts before
+RO:0002091	# starts during
+RO:0002092	# happens during
+RO:0002224	# starts with
+BFO:0000062	# preceded by
+BFO:0000063	# precedes

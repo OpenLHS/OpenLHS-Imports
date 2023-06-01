@@ -1,1 +1,15 @@
+#Classes
+#
+IAO:0000030	# information content entity
+BFO:0000040	# Material entity
+OMRSE:00000204	# social identity information content entity
+OMRSE:00000209	# gender identity information content entity
+OMRSE:00000210	# female gender identity information content entity
+OMRSE:00000211	# male gender identity information content entity
+OMRSE:00000212	# non-binary gender identity information content entity
+OMRSE:00000061	# architectural structure
+OMRSE:00000062	# facility
+#
+#Object properties
+#
 
