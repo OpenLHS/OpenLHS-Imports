@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/OpenLHS-Imports
+
+idspace: OPENLHS-IMPORTS
+base_url: /obo/OpenLHS-Imports
+
+products:
+- OpenLHS-Imports.owl: https://raw.githubusercontent.com/OpenLHS/OpenLHS-Imports/main/OpenLHS-Imports.owl
+- OpenLHS-Imports.obo: https://raw.githubusercontent.com/OpenLHS/OpenLHS-Imports/main/OpenLHS-Imports.obo
+
+term_browser: ontobee
+example_terms:
+- OPENLHS-IMPORTS_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/OpenLHS/OpenLHS-Imports/v
+
+- prefix: /tracker/
+  replacement: https://github.com/OpenLHS/OpenLHS-Imports/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/OPENLHS-IMPORTS?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/OpenLHS/OpenLHS-Imports/main/
+

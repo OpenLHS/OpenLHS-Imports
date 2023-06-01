@@ -1,0 +1,20 @@
+id: OpenLHS-Imports
+title: External imports ontology
+github_org: OpenLHS
+repo: OpenLHS-Imports
+documentation:
+  documentation_system: mkdocs
+release_artefacts:
+  - full
+primary_release: full
+export_formats:
+  - owl
+import_group:
+  products:
+    - id: bfo
+      module_type: mirror
+    - id: ro
+    - id: obi
+    - id: iao
+    - id: omrse
+robot_java_args: "-Xmx8G"
