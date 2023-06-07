@@ -6,6 +6,7 @@ BFO:0000003	# Occurent
 BFO:0000031	# GDC
 IAO:0000030	# ICE
 IAO:0000027	# Data item
+IAO:0000109	# Measurement Datum
 IAO:0000033	# DIE
 IAO:0000310	# Document
 IAO:0000104	# Plan spec

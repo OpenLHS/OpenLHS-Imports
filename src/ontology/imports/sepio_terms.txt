@@ -1,0 +1,9 @@
+#Classes
+#
+SEPIO:0000174	#statement
+SEPIO:0000187	#conf level measurement datum
+SEPIO:0000048	#contributor role
+#
+#Object properties
+#
+IAO:0000136	# is about

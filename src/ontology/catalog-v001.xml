@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-
-  
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/ro_import.obo" uri="imports/ro_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/obi_import.owl" uri="imports/obi_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/obi_import.obo" uri="imports/obi_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/iao_import.owl" uri="imports/iao_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/iao_import.obo" uri="imports/iao_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/omrse_import.owl" uri="imports/omrse_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/omrse_import.obo" uri="imports/omrse_import.obo"/>
-  
-
-
-  
-
-</group>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-07/imports/sepio_import.owl" uri="imports/sepio_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-06/imports/sepio_import.owl" uri="imports/sepio_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/obi_import.obo" uri="imports/obi_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/iao_import.owl" uri="imports/iao_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/iao_import.obo" uri="imports/iao_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/omrse_import.owl" uri="imports/omrse_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/omrse_import.obo" uri="imports/omrse_import.obo"/>
+    </group>
 </catalog>

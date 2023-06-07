@@ -16,11 +16,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Imports.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-02/OpenLHS-Imports.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-07/OpenLHS-Imports.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>External imports ontology</dcterms:title>
-        <owl:versionInfo>2023-06-02</owl:versionInfo>
+        <owl:versionInfo>2023-06-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -62,6 +62,12 @@
         <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_based_on -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/COB_based_on"/>
     
 
 
@@ -377,6 +383,14 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000052 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000052">
+        <rdfs:label xml:lang="en">consider</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/valid_for_go_annotation_extension -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension">
@@ -491,6 +505,12 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
@@ -500,7 +520,10 @@ Where we have an annotation assertion
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <obo:IAO_0000115>An account of the resource.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.&quot;</rdfs:comment>
         <rdfs:label>description</rdfs:label>
+        <rdfs:label xml:lang="en">description</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -819,9 +842,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000136</obo:COB_based_on>
         <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
 
 We will try to build it back up by elaborating the various subproperties that are more precisely defined.
@@ -829,7 +854,9 @@ We will try to build it back up by elaborating the various subproperties that ar
 Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <rdfs:label>is about</rdfs:label>
         <rdfs:label xml:lang="en">is about</rdfs:label>
+        <rdfs:label xml:lang="en">is_about</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3271,6 +3298,23 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000111 xml:lang="en">measurement datum</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of measurement data are the recoding of the weight of a mouse as {40,mass,&quot;grams&quot;}, the recording of an observation of the behavior of the mouse {,process,&quot;agitated&quot;}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2/2/2009 is_specified_output of some assay?</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300">
@@ -3702,6 +3746,72 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <dce:contributor xml:lang="en">Sarah Bost</dce:contributor>
         <dce:contributor xml:lang="en">William R. Hogan</dce:contributor>
         <rdfs:label xml:lang="en">non-binary identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115>A role borne by a  person, group, organization, or information processing entity (e.g. software, algorithms) in virtue of its active participation in a process leading to some outcome (e.g the generation, modification, or provision of some entity).</obo:IAO_0000115>
+        <obo:IAO_0000116>A role realized by a participant in a process such that the participant causes the process.</obo:IAO_0000116>
+        <obo:IAO_0000118>agent role</obo:IAO_0000118>
+        <obo:SEPIO_0000052>http://purl.org/see/rdo#agent_role</obo:SEPIO_0000052>
+        <rdfs:comment>In the context of evidence and proveannce, agents are persons, groups, organizations, or software that are responsible for making assertions or generating the evidence and data that support them.</rdfs:comment>
+        <rdfs:label>agent role</rdfs:label>
+        <rdfs:label xml:lang="en">contributor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112>The following is derived from https://en.wikipedia.org/wiki/Statement_(logic):
+
+Examples of sentences that are (or make) statements:
+&quot;Socrates is a man.&quot;
+&quot;A triangle has three sides.&quot;
+&quot;Madrid is the capital of Spain.&quot;
+&quot;There are five ducks on the lake&quot;
+&quot;The BRAF V600E mutation causes breast cancer&quot;
+
+Examples of sentences that are not (or do not make) statements:
+&quot;Who are you?&quot;
+&quot;Run!&quot;
+&quot;Greenness perambulates.&quot;
+&quot;I had one grunch but the eggplant over there.&quot;
+&quot;The King of France is wise.&quot;
+&quot;Broccoli tastes good.&quot;
+
+The first two examples are not declarative sentences and therefore are not (or do not make) statements. The third and fourth are declarative sentences but, lacking meaning, are neither true nor false and therefore are not (or do not make) statements. The fifth and sixth examples are meaningful declarative sentences, but are not statements but rather matters of opinion or taste.</obo:IAO_0000112>
+        <obo:IAO_0000115>An information content entity expressing a declarative sentence that is either true or false.</obo:IAO_0000115>
+        <rdfs:comment>From https://en.wikipedia.org/wiki/Statement_(logic) (2017-06-21):
+&quot;A statement is a declarative sentence that bears truth value, in that it can be either true or false. This definition derives from the domain of logic, where a statement is either (a) a meaningful declarative sentence that is either true or false, or (b) that which a true or false declarative sentence asserts. In the latter case, a statement is distinct from a sentence in that a sentence is only one formulation of a statement, whereas there may be many other formulations expressing the same statement . . . In (this treatment), &quot;statement&quot; is introduced in order to distinguish a sentence from its informational content. A statement is regarded as the information content of an information-bearing sentence. Thus, a sentence is related to the statement it bears like a numeral to the number it refers to. Statements are abstract logical entities, while sentences are grammatical entities.&quot;
+----
+Note that the definition in (b) describes something closer to the notion of a &apos;Proposition&apos; as defined in SEPIO?</rdfs:comment>
+        <rdfs:comment>Statements are sentences (or, more precisely, the information content of sentences) that declare a definitive or proposed fact - expressing something about the world or one&apos;s experience of it that may or may not be true. The identity of a particular Statement is dependent upon (1) what it reports as true (its semantic content), (2) the Agent stating it, and (3) the occasion on which the statement is made. 
+
+The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos;statement&apos; as it has no truth value. By contrast, the phrase &quot;the pink elephant is in the room&quot; is a statement as this can be evaluated for its truth.</rdfs:comment>
+        <rdfs:label xml:lang="en">statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A data item that quantifies the level of confidence an agent has that a particular piece of information is true.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">confidence level</rdfs:label>
     </owl:Class>
     
 
