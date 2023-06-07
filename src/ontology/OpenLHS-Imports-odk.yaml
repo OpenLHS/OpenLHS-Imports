@@ -17,6 +17,7 @@ import_group:
     - id: obi
     - id: iao
     - id: omrse
+    - id: sepio
 robot_report:
   custom_sparql_exports:
     - base-classes-report
