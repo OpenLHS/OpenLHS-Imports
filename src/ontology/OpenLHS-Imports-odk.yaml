@@ -18,6 +18,8 @@ import_group:
     - id: iao
     - id: omrse
     - id: sepio
+    - id: cco
+      mirror_from: "https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/cco-merged/MergedAllCoreOntology-v1.4-2023-04-07.ttl"
 robot_report:
   custom_sparql_exports:
     - base-classes-report
