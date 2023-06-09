@@ -1623,9 +1623,21 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <owl:inverseOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_agent"/>
         <CommonCoreOntologies:definition xml:lang="en">x agent_in y iff y is an instance of Process and x is an instance of Agent, such that x is causally active in y.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label xml:lang="en">agent in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/has_agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_agent">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <CommonCoreOntologies:definition xml:lang="en">x has_agent y iff x is an instance of Process and y is an instance of Agent, such that y is causally active in x.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label xml:lang="en">has agent</rdfs:label>
     </owl:ObjectProperty>
     
 
