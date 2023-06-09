@@ -22,6 +22,7 @@ These are the current imports in OPENLHS-IMPORTS
 | iao | http://purl.obolibrary.org/obo/iao.owl | None |
 | omrse | http://purl.obolibrary.org/obo/omrse.owl | None |
 | sepio | http://purl.obolibrary.org/obo/sepio.owl | None |
+| cco | https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/cco-merged/MergedAllCoreOntology-v1.4-2023-04-07.ttl | None |
 
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:
