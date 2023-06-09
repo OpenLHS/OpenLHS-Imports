@@ -5,19 +5,14 @@ BFO:0000003	# Occurent
 BFO:0000002	# Continuant
 BFO:0000004	# independent continuant
 BFO:0000015	# Process
+BFO:0000017	# Realizable entity
 BFO:0000040	# Material entity
 OBI:0000011	# Planned process
 OBI:0000245	# Organization
 OBI:0100026	# Organism
+OBI:0000260	# Plan
 NCBITaxon:10239	# Viruses
 NCBITaxon:2	# Bacteria
 NCBITaxon:2157	# Archea
 NCBITaxon:2759	# Eukaryota
 NCBITaxon:9606	# Homo sapiens
-#
-#Object properties
-#
-RO:0000056	# participates in
-RO:0000057	# has participant
-OBI:0000293	# has spec input
-OBI:0000295	# is spec input
