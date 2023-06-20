@@ -21,6 +21,7 @@ These are the current imports in OPENLHS-IMPORTS
 | obi | http://purl.obolibrary.org/obo/obi.owl | None |
 | iao | http://purl.obolibrary.org/obo/iao.owl | None |
 | omrse | http://purl.obolibrary.org/obo/omrse.owl | None |
+| ogms | http://purl.obolibrary.org/obo/ogms.owl | None |
 | sepio | http://purl.obolibrary.org/obo/sepio.owl | None |
 | cco | https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/cco-merged/MergedAllCoreOntology-v1.4-2023-04-07.ttl | None |
 
