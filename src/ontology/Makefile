@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bfo ro obi iao omrse ogms sepio cco
+IMPORTS =  bfo ro obi iao sepio ogms omrse cco
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -315,6 +315,34 @@ $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms_combine
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru  \
     $(ANNOTATE_CONVERT_FILE); fi
 
+## Module for ontology: ro
+
+$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in OpenLHS-Imports.Makefile!" && false
+## Module for ontology: obi
+
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in OpenLHS-Imports.Makefile!" && false
+## Module for ontology: iao
+
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in OpenLHS-Imports.Makefile!" && false
+## Module for ontology: sepio
+
+$(IMPORTDIR)/sepio_import.owl: $(MIRRORDIR)/sepio.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in OpenLHS-Imports.Makefile!" && false
+## Module for ontology: ogms
+
+$(IMPORTDIR)/ogms_import.owl: $(MIRRORDIR)/ogms.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in OpenLHS-Imports.Makefile!" && false
+## Module for ontology: omrse
+
+$(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in OpenLHS-Imports.Makefile!" && false
+## Module for ontology: cco
+
+$(IMPORTDIR)/cco_import.owl: $(MIRRORDIR)/cco.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in OpenLHS-Imports.Makefile!" && false
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -382,12 +410,11 @@ mirror-iao: | $(TMPDIR)
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
-## ONTOLOGY: omrse
-.PHONY: mirror-omrse
-.PRECIOUS: $(MIRRORDIR)/omrse.owl
-mirror-omrse: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/omrse.owl --create-dirs -o $(MIRRORDIR)/omrse.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/omrse.owl -o $@.tmp.owl &&\
+## ONTOLOGY: sepio
+.PHONY: mirror-sepio
+.PRECIOUS: $(MIRRORDIR)/sepio.owl
+mirror-sepio: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/monarch-initiative/SEPIO-ontology/master/sepio.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -400,12 +427,12 @@ mirror-ogms: | $(TMPDIR)
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
-## ONTOLOGY: sepio
-.PHONY: mirror-sepio
-.PRECIOUS: $(MIRRORDIR)/sepio.owl
-mirror-sepio: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/sepio.owl --create-dirs -o $(MIRRORDIR)/sepio.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/sepio.owl -o $@.tmp.owl &&\
+## ONTOLOGY: omrse
+.PHONY: mirror-omrse
+.PRECIOUS: $(MIRRORDIR)/omrse.owl
+mirror-omrse: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/omrse.owl --create-dirs -o $(MIRRORDIR)/omrse.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/omrse.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

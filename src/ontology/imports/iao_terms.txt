@@ -1,12 +1,6 @@
-#Classes
-#
-BFO:0000001	# Entity
-BFO:0000002	# Continuant
-BFO:0000003	# Occurent
-BFO:0000031	# GDC
 IAO:0000030	# ICE
 IAO:0000027	# Data item
-IAO:0000109	# Measurement Datum
+IAO:0000109	# measurement data
 IAO:0000033	# DIE
 IAO:0000310	# Document
 IAO:0000104	# Plan spec
@@ -14,22 +8,16 @@ IAO:0000007	# Action spec
 IAO:0000005	# Objective spec
 IAO:0020000	# identifier
 IAO:0000578	# CRID
-BFO:0000015	# Process
-OBI:0000011	# Planned process
+IAO:0000577	# CRID symbol
+IAO:0000579	# CRID registry
+IAO:0020020	# Code set
+IAO:0000028	# Symbol
 IAO:0020010	# identifier creating process
 IAO:0000300	# textual entity
 IAO:0000646	# postal code
 IAO:0000422	# postal address
-#
-#Object properties
-#
 IAO:0000136	# is about
 IAO:0000219	# denotes
 IAO:0000235	# denoted by
 IAO:0000142	# mentions
 IAO:0000143	# mentioned by
-BFO:0000051	# has part
-RO:0000056	# participates in
-RO:0000057	# has participant
-OBI:0000299	# has spec output
-OBI:0000312	# is spec output

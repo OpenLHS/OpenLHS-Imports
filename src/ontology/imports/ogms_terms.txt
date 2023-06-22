@@ -1,17 +1,8 @@
-#
-BFO:0000001	# Entity
-BFO:0000003	# Occurent
-BFO:0000002	# Continuant
-BFO:0000004	# independent continuant
-BFO:0000015	# Process
-BFO:0000017	# Realizable entity
-BFO:0000040	# Material entity
-BFO:0000019	# quality
-BFO:0000016	# disposition
 OGMS:0000045 #disorder
 OGMS:0000031 #disease
 OGMS:0000102 #injury
 OGMS:0000086 #syndrome
+OGMS:0000060 #bodily process
 OGMS:0000061 #path bodily process
 OGMS:0000129 #phys sign
 OGMS:0000142 #qual sign
