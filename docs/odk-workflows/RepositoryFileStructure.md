@@ -17,13 +17,13 @@ These are the current imports in OPENLHS-IMPORTS
 | Import | URL | Type |
 | ------ | --- | ---- |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | mirror |
-| ro | http://purl.obolibrary.org/obo/ro.owl | None |
-| obi | http://purl.obolibrary.org/obo/obi.owl | None |
-| iao | http://purl.obolibrary.org/obo/iao.owl | None |
-| omrse | http://purl.obolibrary.org/obo/omrse.owl | None |
-| ogms | http://purl.obolibrary.org/obo/ogms.owl | None |
-| sepio | http://purl.obolibrary.org/obo/sepio.owl | None |
-| cco | https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/cco-merged/MergedAllCoreOntology-v1.4-2023-04-07.ttl | None |
+| ro | http://purl.obolibrary.org/obo/ro.owl | custom |
+| obi | http://purl.obolibrary.org/obo/obi.owl | custom |
+| iao | http://purl.obolibrary.org/obo/iao.owl | custom |
+| sepio | https://raw.githubusercontent.com/monarch-initiative/SEPIO-ontology/master/sepio.owl | custom |
+| ogms | http://purl.obolibrary.org/obo/ogms.owl | custom |
+| omrse | http://purl.obolibrary.org/obo/omrse.owl | custom |
+| cco | https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/cco-merged/MergedAllCoreOntology-v1.4-2023-04-07.ttl | custom |
 
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:

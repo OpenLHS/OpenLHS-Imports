@@ -1,11 +1,5 @@
-http://purl.obolibrary.org/obo/BFO_0000040
-http://purl.obolibrary.org/obo/BFO_0000015
 http://www.ontologyrepository.com/CommonCoreOntologies/Agent
-http://purl.obolibrary.org/obo/RO_0000056
 http://www.ontologyrepository.com/CommonCoreOntologies/agent_in
-http://purl.obolibrary.org/obo/BFO_0000017
 http://www.ontologyrepository.com/CommonCoreOntologies/AgentCapability
-http://purl.obolibrary.org/obo/RO_0000053
 http://www.ontologyrepository.com/CommonCoreOntologies/has_capability
-http://purl.obolibrary.org/obo/RO_0000057
 http://www.ontologyrepository.com/CommonCoreOntologies/has_agent

@@ -9,14 +9,14 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/OpenLHS-Imports.owl>
-Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/bfo_import.owl>)
-Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/iao_import.owl>)
-Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/obi_import.owl>)
-Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/omrse_import.owl>)
-Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-07/imports/sepio_import.owl>)
-Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-09/imports/cco_import.owl>)
-Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-20/imports/ogms_import.owl>)
+Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-22/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-22/imports/cco_import.owl>)
+Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-22/imports/iao_import.owl>)
+Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-22/imports/obi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-22/imports/ogms_import.owl>)
+Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-22/imports/omrse_import.owl>)
+Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-22/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-22/imports/sepio_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "External imports ontology")
@@ -40,23 +40,6 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
-
-
-############################
-#   Classes
-############################
-
-# Class: <http://purl.obolibrary.org/obo/SEPIO_0000048> (contributor role)
-
-SubClassOf(<http://purl.obolibrary.org/obo/SEPIO_0000048> <http://purl.obolibrary.org/obo/BFO_0000023>)
-
-# Class: <http://purl.obolibrary.org/obo/SEPIO_0000174> (statement)
-
-SubClassOf(<http://purl.obolibrary.org/obo/SEPIO_0000174> <http://purl.obolibrary.org/obo/IAO_0000030>)
-
-# Class: <http://purl.obolibrary.org/obo/SEPIO_0000187> (confidence level)
-
-SubClassOf(<http://purl.obolibrary.org/obo/SEPIO_0000187> <http://purl.obolibrary.org/obo/IAO_0000109>)
 
 
 )
