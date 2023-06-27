@@ -51,6 +51,7 @@ $(IMPORTDIR)/cco_import.owl: $(MIRRORDIR)/cco.owl
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
 		extract -T $(IMPORTDIR)/cco_terms.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT --intermediates none \
 		filter -T $(IMPORTDIR)/cco_terms.txt --select "self annotations" --trim false \
+		rename --add-prefix "cco: http://www.ontologyrepository.com/CommonCoreOntologies/" --mapping cco:definition obo:IAO_0000115 \
 		query --update ../sparql/cco_clean.ru \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi

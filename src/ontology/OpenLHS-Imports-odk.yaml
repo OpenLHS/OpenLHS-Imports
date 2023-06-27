@@ -6,7 +6,8 @@ documentation:
   documentation_system: mkdocs
 release_artefacts:
   - full
-primary_release: full
+  - non-classified
+primary_release: non-classified
 export_formats:
   - owl
 import_group:
