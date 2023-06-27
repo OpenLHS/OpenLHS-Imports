@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/OpenLHS-Imports/imports/cco_import.owl>
-<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-22/imports/cco_import.owl>
-Annotation(owl:versionInfo "2023-06-22")
+<http://purl.obolibrary.org/obo/OpenLHS-Imports/releases/2023-06-27/imports/cco_import.owl>
+Annotation(owl:versionInfo "2023-06-27")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
@@ -23,7 +23,7 @@ Declaration(ObjectProperty(<http://www.ontologyrepository.com/CommonCoreOntologi
 Declaration(ObjectProperty(<http://www.ontologyrepository.com/CommonCoreOntologies/capability_of>))
 Declaration(ObjectProperty(<http://www.ontologyrepository.com/CommonCoreOntologies/has_agent>))
 Declaration(ObjectProperty(<http://www.ontologyrepository.com/CommonCoreOntologies/has_capability>))
-Declaration(AnnotationProperty(<http://www.ontologyrepository.com/CommonCoreOntologies/definition>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology>))
 
 ############################
@@ -32,7 +32,7 @@ Declaration(AnnotationProperty(<http://www.ontologyrepository.com/CommonCoreOnto
 
 # Object Property: <http://www.ontologyrepository.com/CommonCoreOntologies/agent_in> (agent in)
 
-AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://www.ontologyrepository.com/CommonCoreOntologies/agent_in> "x agent_in y iff y is an instance of Process and x is an instance of Agent, such that x is causally active in y."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ontologyrepository.com/CommonCoreOntologies/agent_in> "x agent_in y iff y is an instance of Process and x is an instance of Agent, such that x is causally active in y."@en)
 AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> <http://www.ontologyrepository.com/CommonCoreOntologies/agent_in> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label <http://www.ontologyrepository.com/CommonCoreOntologies/agent_in> "agent in"@en)
 SubObjectPropertyOf(<http://www.ontologyrepository.com/CommonCoreOntologies/agent_in> <http://purl.obolibrary.org/obo/RO_0000056>)
@@ -47,14 +47,14 @@ ObjectPropertyRange(<http://www.ontologyrepository.com/CommonCoreOntologies/capa
 
 # Object Property: <http://www.ontologyrepository.com/CommonCoreOntologies/has_agent> (has agent)
 
-AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://www.ontologyrepository.com/CommonCoreOntologies/has_agent> "x has_agent y iff x is an instance of Process and y is an instance of Agent, such that y is causally active in x."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ontologyrepository.com/CommonCoreOntologies/has_agent> "x has_agent y iff x is an instance of Process and y is an instance of Agent, such that y is causally active in x."@en)
 AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> <http://www.ontologyrepository.com/CommonCoreOntologies/has_agent> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label <http://www.ontologyrepository.com/CommonCoreOntologies/has_agent> "has agent"@en)
 SubObjectPropertyOf(<http://www.ontologyrepository.com/CommonCoreOntologies/has_agent> <http://purl.obolibrary.org/obo/RO_0000057>)
 
 # Object Property: <http://www.ontologyrepository.com/CommonCoreOntologies/has_capability> (has capability)
 
-AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://www.ontologyrepository.com/CommonCoreOntologies/has_capability> "x has_capability y iff x is an instance of Agent and y is an instance of Agent Capability, such that x bearer of y."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ontologyrepository.com/CommonCoreOntologies/has_capability> "x has_capability y iff x is an instance of Agent and y is an instance of Agent Capability, such that x bearer of y."@en)
 AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> <http://www.ontologyrepository.com/CommonCoreOntologies/has_capability> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label <http://www.ontologyrepository.com/CommonCoreOntologies/has_capability> "has capability"@en)
 SubObjectPropertyOf(<http://www.ontologyrepository.com/CommonCoreOntologies/has_capability> <http://purl.obolibrary.org/obo/RO_0000053>)
@@ -69,7 +69,7 @@ ObjectPropertyRange(<http://www.ontologyrepository.com/CommonCoreOntologies/has_
 
 # Class: <http://www.ontologyrepository.com/CommonCoreOntologies/Agent> (Agent)
 
-AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://www.ontologyrepository.com/CommonCoreOntologies/Agent> "A Material Entity that is capable of performing Planned Acts"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ontologyrepository.com/CommonCoreOntologies/Agent> "A Material Entity that is capable of performing Planned Acts"@en)
 AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> <http://www.ontologyrepository.com/CommonCoreOntologies/Agent> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label <http://www.ontologyrepository.com/CommonCoreOntologies/Agent> "Agent"@en)
 EquivalentClasses(<http://www.ontologyrepository.com/CommonCoreOntologies/Agent> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://www.ontologyrepository.com/CommonCoreOntologies/agent_in> <http://purl.obolibrary.org/obo/BFO_0000015>)))
@@ -77,7 +77,7 @@ SubClassOf(<http://www.ontologyrepository.com/CommonCoreOntologies/Agent> <http:
 
 # Class: <http://www.ontologyrepository.com/CommonCoreOntologies/AgentCapability> (Agent Capability)
 
-AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://www.ontologyrepository.com/CommonCoreOntologies/AgentCapability> "A Realizable Entity that inheres in an Agent to the extent of that Agent's capacity to realize it in Intentional Acts of a certain type."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ontologyrepository.com/CommonCoreOntologies/AgentCapability> "A Realizable Entity that inheres in an Agent to the extent of that Agent's capacity to realize it in Intentional Acts of a certain type."@en)
 AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> <http://www.ontologyrepository.com/CommonCoreOntologies/AgentCapability> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label <http://www.ontologyrepository.com/CommonCoreOntologies/AgentCapability> "Agent Capability"@en)
 SubClassOf(<http://www.ontologyrepository.com/CommonCoreOntologies/AgentCapability> <http://purl.obolibrary.org/obo/BFO_0000017>)
